@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingBottom="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Top Background banner of home screen -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="248dp"
+            android:contentDescription="@string/login_top_banner_text"
+            android:scaleType="fitXY"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/login_top_banner" />
+
+        <!-- Top heading home screen -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:text="@string/login_text"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- ISD Code India textview -->
+        <TextView
+            android:id="@+id/tv_heading91"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:text="@string/text91"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@id/layout_phoneNumber"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/layout_phoneNumber" />
+
+        <!-- Edit Phone Number Button -->
+        <ImageButton
+            android:id="@+id/button_editPhoneNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="300dp"
+            android:layout_marginEnd="15dp"
+            android:backgroundTint="@color/redColor"
+            android:contentDescription="@string/edit_phone_number_button_text"
+            android:elevation="5dp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@id/layout_phoneNumber"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_edit" />
+
+        <!-- Phone number edit text view layout -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_phoneNumber"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="282dp"
+            android:layout_marginEnd="30dp"
+            android:paddingBottom="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_heading91"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editText_phoneNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_mobile_number_hint"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textSize="18sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Send OTP button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_sendOtp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="@color/charGreenColor"
+            android:text="@string/send_otp_text"
+            android:textSize="16sp"
+            app:cornerRadius="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layout_phoneNumber" />
+
+        <!-- OTP edit text view layout -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_otp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="30dp"
+            android:paddingBottom="5dp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_heading91"
+            app:layout_constraintTop_toBottomOf="@id/layout_phoneNumber">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editText_otp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_otp_received_text"
+                android:inputType="number"
+                android:maxLength="6"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Submit OTP button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_submitOtp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="@color/charGreenColor"
+            android:text="@string/submit_text"
+            android:textSize="16sp"
+            android:visibility="invisible"
+            app:cornerRadius="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layout_otp" />
+
+        <ProgressBar
+            android:id="@+id/loading_anim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/button_sendOtp"
+            android:visibility="invisible"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

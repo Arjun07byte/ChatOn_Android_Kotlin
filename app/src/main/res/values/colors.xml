@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black50">#80000000</color>
+    <color name="white50">#80FFFFFF</color>
+    <color name="chatHeaderColor">#3B4EF5</color>
+    <color name="charGreenColor">#1AD950</color>
+    <color name="chat2ndPersonTileColor">#B8FFF9</color>
+    <color name="chat1stPersonTileColor">#42C2FF</color>
+    <color name="redColor">#FF0000</color>
+</resources>

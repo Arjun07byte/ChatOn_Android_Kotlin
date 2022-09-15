@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ChatOn</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_top_banner_text">Login Top Banner</string>
+    <string name="login_text">You are one step\naway to your friends\nwhom you miss</string>
+    <string name="enter_mobile_number_hint">Enter Mobile Number</string>
+    <string name="send_otp_text">SEND OTP</string>
+    <string name="text91">+91</string>
+    <string name="submit">SUBMIT</string>
+    <string name="enter_otp_recieved">Enter OTP Received</string>
+    <string name="enter_otp_received_text">Enter OTP Received</string>
+    <string name="submit_text">SUBMIT</string>
+    <string name="resend_otp_text">RESEND OTP</string>
+    <string name="edit_phone_number_button_text">Edit Phone Number Button</string>
+</resources>
