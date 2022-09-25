@@ -47,7 +47,7 @@ class HomeFragment : Fragment() {
         checkUser()
     }
 
-    // Handling the updates of the Recent chats sent to the User
+    // Handling the updates of the Recent chats sent to the Users
     private fun setUpChats() {
         val userChats: ArrayList<Chats> = ArrayList()
 
