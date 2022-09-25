@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">ChatOn</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="login_top_banner_text">Login Top Banner</string>
     <string name="login_text">You are one step\naway to your friends\nwhom you miss</string>
@@ -8,9 +7,16 @@
     <string name="send_otp_text">SEND OTP</string>
     <string name="text91">+91</string>
     <string name="submit">SUBMIT</string>
-    <string name="enter_otp_recieved">Enter OTP Received</string>
     <string name="enter_otp_received_text">Enter OTP Received</string>
-    <string name="submit_text">SUBMIT</string>
     <string name="resend_otp_text">RESEND OTP</string>
     <string name="edit_phone_number_button_text">Edit Phone Number Button</string>
+    <string name="chaton_text">ChatOn</string>
+    <string name="profile_button_text">Profile Button</string>
+    <string name="search_button_text">Search Button</string>
+    <string name="new_chat_button_text">New Chat Button</string>
+    <string name="new_chat_text">New Chat</string>
+    <string name="let_s_talk_text">Let\'s Talk</string>
+    <string name="chatDateTime">%1s \n %2s</string>
+    <string name="hello_text">Hello!!</string>
+    <string name="chat_fragment_back_button_text">Chat Fragment Back Button</string>
 </resources>

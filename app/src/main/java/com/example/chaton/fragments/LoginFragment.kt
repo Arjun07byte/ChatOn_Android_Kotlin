@@ -27,7 +27,7 @@ class LoginFragment : Fragment() {
     private lateinit var editTextPhoneNum: TextInputEditText
     private lateinit var editTextOtp: TextInputEditText
     private val firebaseAuth = FirebaseAuth.getInstance()
-    private lateinit var currActivity: FragmentActivity
+    private lateinit var parentActivity: FragmentActivity
     private lateinit var verificationCode: String
     private lateinit var resendCodeID: PhoneAuthProvider.ForceResendingToken
     private lateinit var animationView: ProgressBar
@@ -75,7 +75,7 @@ class LoginFragment : Fragment() {
         otpLayout = view.findViewById(R.id.layout_otp)
         editTextPhoneNum = view.findViewById(R.id.editText_phoneNum)
         editTextOtp = view.findViewById(R.id.editText_otp)
-        currActivity = requireActivity()
+        parentActivity = requireActivity()
         animationView = view.findViewById(R.id.loading_anim)
     }
 
@@ -110,8 +110,8 @@ class LoginFragment : Fragment() {
         firebaseAuth.signInWithCredential(credential)
             .addOnCompleteListener(requireActivity()) { task ->
                 if (task.isSuccessful) {
-                    currActivity.supportFragmentManager.beginTransaction().replace(
-                        R.id.home_fragment, HomeFragment(FirebaseAuth.getInstance())
+                    parentActivity.supportFragmentManager.beginTransaction().replace(
+                        R.id.home_fragment, HomeFragment()
                     ).commit()
                 } else {
                     animationView.visibility = View.INVISIBLE

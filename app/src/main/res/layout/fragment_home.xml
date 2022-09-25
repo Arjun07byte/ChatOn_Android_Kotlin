@@ -6,9 +6,87 @@
     android:background="@color/white">
 
     <View
+        android:id="@+id/layout_appBar"
         android:layout_width="match_parent"
         android:layout_height="56dp"
         app:layout_constraintTop_toTopOf="parent"
         android:background="@color/chatHeaderColor"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:text="@string/chaton_text"
+        android:textColor="@color/white"
+        android:textSize="18sp"/>
+
+    <ImageButton
+        android:id="@+id/button_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_profile"
+        android:background="@color/chatHeaderColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/profile_button_text" />
+
+    <ImageButton
+        android:id="@+id/button_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_search"
+        android:background="@color/chatHeaderColor"
+        app:layout_constraintEnd_toStartOf="@id/button_profile"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/search_button_text" />
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/layout_shimmerRv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/layout_appBar"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/shimmer_rv_item" />
+            <include layout="@layout/shimmer_rv_item" />
+            <include layout="@layout/shimmer_rv_item" />
+            <include layout="@layout/shimmer_rv_item" />
+            <include layout="@layout/shimmer_rv_item" />
+            <include layout="@layout/shimmer_rv_item" />
+        </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chats_rv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/layout_appBar"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/button_new_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_plus"
+        android:background="@color/chatHeaderColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:contentDescription="@string/new_chat_button_text"
+        app:tint="@color/white"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

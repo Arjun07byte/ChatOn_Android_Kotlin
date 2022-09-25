@@ -3,12 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidProjects/ChatOn/app/src/main/res/drawable/circular_view.xml" value="0.2105" />
         <entry key="..\:/AndroidProjects/ChatOn/app/src/main/res/drawable/ic_edit.xml" value="0.197" />
+        <entry key="..\:/AndroidProjects/ChatOn/app/src/main/res/drawable/ic_iphone_13_pro_max___6.xml" value="0.146" />
+        <entry key="..\:/AndroidProjects/ChatOn/app/src/main/res/drawable/ic_plus.xml" value="0.2115" />
         <entry key="..\:/AndroidProjects/ChatOn/app/src/main/res/drawable/login_top_banner.xml" value="0.197" />
+        <entry key="..\:/AndroidProjects/ChatOn/app/src/main/res/drawable/splash_bg.xml" value="0.1" />
         <entry key="..\:/AndroidProjects/ChatOn/app/src/main/res/drawable/splsh_bg.xml" value="0.15" />
         <entry key="..\:/AndroidProjects/ChatOn/app/src/main/res/layout/activity_main.xml" value="0.17481884057971014" />
-        <entry key="..\:/AndroidProjects/ChatOn/app/src/main/res/layout/fragment_home.xml" value="0.21" />
+        <entry key="..\:/AndroidProjects/ChatOn/app/src/main/res/layout/chats_list_rv_item.xml" value="0.22" />
+        <entry key="..\:/AndroidProjects/ChatOn/app/src/main/res/layout/fragment_chat.xml" value="0.22" />
+        <entry key="..\:/AndroidProjects/ChatOn/app/src/main/res/layout/fragment_home.xml" value="0.22" />
         <entry key="..\:/AndroidProjects/ChatOn/app/src/main/res/layout/fragment_login.xml" value="0.22" />
+        <entry key="..\:/AndroidProjects/ChatOn/app/src/main/res/layout/new_chat_bottom_dialog.xml" value="0.22" />
+        <entry key="..\:/AndroidProjects/ChatOn/app/src/main/res/layout/shimmer_rv_item.xml" value="0.2" />
       </map>
     </option>
   </component>

@@ -2,7 +2,7 @@ package com.example.chaton
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.fragment.app.FragmentContainerView
+import com.example.chaton.fragments.ChatFragment
 import com.example.chaton.fragments.HomeFragment
 import com.example.chaton.fragments.LoginFragment
 import com.google.firebase.auth.FirebaseAuth
@@ -19,8 +19,14 @@ class MainActivity : AppCompatActivity() {
             ).commit()
         } else {
             supportFragmentManager.beginTransaction().replace(
-                R.id.home_fragment,HomeFragment(currAuthInst)
+                R.id.home_fragment,HomeFragment()
             ).commit()
         }
+    }
+
+    fun moveToChats(givenNum: String) {
+        supportFragmentManager.beginTransaction().replace(
+            R.id.home_fragment, ChatFragment(givenNum)
+        ).commit()
     }
 }

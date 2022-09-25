@@ -1,4 +1,4 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
     <style name="Theme.ChatOn" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
@@ -14,6 +14,6 @@
         <!-- Customize your theme here. -->
         <item name="android:navigationBarColor">@color/white</item>
         <item name="android:fontFamily">@font/poppins_regular</item>
-        <item name="android:windowBackground">@drawable/splsh_bg</item>
+        <item name="android:windowBackground">@drawable/splash_bg</item>
     </style>
 </resources>
